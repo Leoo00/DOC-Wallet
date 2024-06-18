@@ -1,0 +1,110 @@
+.legend {
+    color: #a3a3a3;
+  }
+  
+  .book-list {
+    margin: 20px auto;
+    width: 950px;
+  }
+  
+  .book-list h3 {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+  
+    font-weight: 400;
+  
+    color: #8b8b8b;
+  }
+  
+  .book-list h3::after {
+    position: absolute;
+    content: "📄";
+    padding-left: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    border-bottom: 1px solid #c8c8c8;
+  
+    font-size: 13.33px;
+    color: #8b8b8b;
+  }
+  
+  th {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .description {
+    max-width: 120px;
+    text-align: justify;
+  
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  @media (max-width: 1095px) {
+    .book-list {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .book-list {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .book-list {
+      width: 100%;
+    }
+  
+    table {
+      font-size: 8px !important;
+    }
+  
+    th,
+    td {
+      padding: 6px;
+    }
+  
+    .title {
+      max-width: 100px;
+      text-align: justify;
+  
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  
+    .description {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .book-list {
+      width: 90%;
+    }
+    .title {
+      max-width: 10px;
+      text-align: justify;
+  
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  
+    .description {
+      display: none;
+    }
+  }
